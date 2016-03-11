@@ -9,4 +9,4 @@ Branching, in revision control and software configuration management, is the dup
 * What is a commit? What makes a good commit message?
 When you're ready to save a copy of the current state of the project, you stage changes with git add . After you're happy with the staged snapshot, you commit it to the project history with git commit . The git add command should not be confused with svn add , which adds a file to the repository.
 * What is a merge conflict?
-cases where one branch has modified a file while the other didn't, or where both branches contain the same new version of the file.
+cases where one branch has modified a file while the other didn't, or   where both branches contain the same new version of the file. 
