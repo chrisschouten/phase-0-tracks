@@ -3,3 +3,10 @@
 .job {background-color: #e9e5dc;}
 
 .accomplishments {font-size: .8em}
+
+
+.accomplishments:hover{color: #ff0000}
+
+ul > li {
+	color: #0000ff;
+}
