@@ -1,0 +1,25 @@
+Elevator Algorithm
+
+-Until doors open stand outside elevator (do nothing)
+  -Step inside elvator when doors open
+-Locate buttons panel
+  - push desired floor button
+  -Until doors open stand inside elevator (do nothing)
+  -Step outside elevator
+
+
+Brush teeth
+
+- Insert toothbrush into mouth
+-For each tooth in mouth
+  - scrub for 5 seconds
+ 
+-Rinse with mouthwash
+  - Start seconds remaining counter at 20 seconds
+  - Stop at 0
+  - Spit into sink
+
+If weekday
+ -go to work
+else- go back to bed
+
