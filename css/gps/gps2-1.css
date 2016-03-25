@@ -1,0 +1,48 @@
+header {
+	text-align: center;
+	width: 91%;
+	background-color: blue;
+	margin: 1em;
+}
+body {margin: 5em;}
+
+.column-1 {
+  width: 40%;
+  display: inline-block;
+  vertical-align: left;
+  margin: 1em;
+  padding: 2em;
+  }
+
+.column-2 {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: right;
+  margin: 1em;
+  padding: 2em
+}
+article:nth-child(even) {
+	background: skyblue;
+	padding: 2em;
+	margin-bottom: .4em;
+	margin-top: .4em
+}
+
+article:nth-child(odd) {
+	background: gray;
+	padding: 2em;
+}
+#first_header {
+	font-size: 3.5em;
+}
+
+#header_text {
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 50%;
+    background-color: lime;
+  }
