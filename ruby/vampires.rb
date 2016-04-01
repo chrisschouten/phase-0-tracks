@@ -4,24 +4,24 @@ employees_surveyed = gets.chomp
 	all_employees = 0
 until all_employees == employees_surveyed.to_i
 
-puts "What is your name?"
-name = gets.chomp
+	puts "What is your name?"
+	name = gets.chomp
 
-puts "How old are you?"
-age = gets.chomp
+	puts "How old are you?"
+	age = gets.chomp
 
-puts "What year were your born?"
-year_of_birth = gets.chomp
+	puts "What year were your born?"
+	year_of_birth = gets.chomp
 
-done = false
-until done == "done"
-		puts "List your alergies."
+		done = false
+		until done == "done"
+			puts "List your alergies."
 		done = gets.chomp
 		if done == "sunshine"
-		puts "Probably a vampire."
+			puts "Probably a vampire."
 		break
-	end
-end
+			end
+		end
 
 puts "Our company cafeteria serves garlic bread.  Should we order some for you?"
 likes_garlic = gets.chomp
@@ -29,12 +29,13 @@ likes_garlic = gets.chomp
 puts "Would you like to enroll in the company's health insurance?"
 health_insurance = gets.chomp
 
-if age.to_i >= 200
+if 2016 - year_of_birth.to_i == age.to_i
 	valid_age = true
-
 else
 	valid_age = false
 end
+
+
 
 	if likes_garlic == "y"
 		garlic_eater = true
@@ -54,10 +55,10 @@ end
 		puts "Definitely a vampire"
 	elsif valid_age && (garlic_eater || needs_insurance)
 		puts "Probably not a vampire."
-	elsif !valid_age && (!garlic_eater || !needs_insurance)
+	elsif !valid_age && !garlic_eater || !needs_insurance
 		puts "Probably a vampire."
 	elsif !valid_age && !garlic_eater && !needs_insurance
-		puts "Almost certainly a valid_age."
+		puts "Almost certainly a vampire"
 	else
 		puts "Results inconclusive"
 	end
