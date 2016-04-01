@@ -29,7 +29,8 @@ likes_garlic = gets.chomp
 puts "Would you like to enroll in the company's health insurance?"
 health_insurance = gets.chomp
 
-if 2016 - year_of_birth.to_i == age.to_i
+t = Time.now
+if t.year - year_of_birth.to_i == age.to_i
 	valid_age = true
 else
 	valid_age = false
