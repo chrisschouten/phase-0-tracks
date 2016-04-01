@@ -13,12 +13,6 @@ age = gets.chomp
 puts "What year were your born?"
 year_of_birth = gets.chomp
 
-puts "Our company cafeteria serves garlic bread.  Should we order some for you?"
-likes_garlic = gets.chomp
-
-puts "Would you like to enroll in the company's health insurance?"
-health_insurance = gets.chomp
-
 done = false
 until done == "done"
 		puts "List your alergies."
@@ -29,6 +23,11 @@ until done == "done"
 	end
 end
 
+puts "Our company cafeteria serves garlic bread.  Should we order some for you?"
+likes_garlic = gets.chomp
+
+puts "Would you like to enroll in the company's health insurance?"
+health_insurance = gets.chomp
 
 if age.to_i >= 200
 	valid_age = true
@@ -40,7 +39,7 @@ end
 	if likes_garlic == "y"
 		garlic_eater = true
 		else
-			garlic_eater = false
+			garlic_eater = false 
 		end
 
 	if health_insurance == "y"
