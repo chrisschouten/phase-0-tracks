@@ -1,19 +1,23 @@
 
-	
+def encrypt(str)
 	index = 0
-	add_letter ="abc"
+	add_letter = ""
 	# declare emplty string to add one letter to 
 	
 	#loop over the string's letters
-	while index < add_letter.length
-		add_letter[index] = add_letter[index].next!
+	while index < str.length
+		add_letter[index] = str[index].next
 		index += 1
+			
 	end
-
-	puts add_letter
- 
- 
+	add_letter
+end
 
 	
+
+	puts "what are your letters"
+	ltrs = gets.chomp
+ 
+	 puts encrypt(ltrs)
 
 
