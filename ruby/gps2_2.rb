@@ -23,7 +23,7 @@ if answer == 'y'
 	list2 ={}
   	puts "Enter more items to add to list (each item seperated by a space)"
   	more_items = gets.chomp
-  	p more_items
+  	p more_items = 
   	more_items = more_items.split(' ')
   	more_items.each do |key|
   		list2[key.to_sym] = "1"

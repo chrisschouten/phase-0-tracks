@@ -1,3 +1,6 @@
+classic_rock = []
+p classic_rock
+
 classic_rock = ["Who", "Beatles", "Stones", "Pink Flyod", "Queen"]
 p classic_rock
 
@@ -11,15 +14,18 @@ p classic_rock
 classic_rock.delete"Who"
 p classic_rock
 
-
-	classic_rock = 
-
-	if classic_rock.include?("Who")
-		puts "Yes, they are here"
+def checker(band)
+	classic_rock = ["Who", "Beatles", "Stones", "Pink Flyod", "Queen"]
+	if classic_rock.include?(band)
+		puts "Yes, they rock!!"
 	else
-		puts "No, they are not here"
+		puts "Not classic rock"
 	end
+end
 
+puts "what band would you like to check"
+band = gets.chomp
+checker(band)
 
 
  
