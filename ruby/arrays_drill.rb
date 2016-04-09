@@ -1,3 +1,7 @@
+def build_array(arg1, arg2, arg3)
+	array_new = " #{arg1} #{arg2} #{arg3}".split
+end
+
 classic_rock = []
 p classic_rock
 
@@ -27,5 +31,8 @@ puts "what band would you like to check"
 band = gets.chomp
 checker(band)
 
+array_new = build_array(5, "two", nil)
+puts array_new
 
- 
+
+
