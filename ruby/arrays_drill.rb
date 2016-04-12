@@ -1,3 +1,7 @@
+def b_array(listx, listy)
+	a = listx.push(listy)
+end
+
 def add_to_array(arr, new1, new2, new3, new4)
 	last_array = "#{arr} #{new1} #{new2} #{new3} #{new4}".split
 end
@@ -51,11 +55,5 @@ end
 yyyyy = c_array("a", true)
 p yyyyy
 
-def b_array(listx, listy)
-		ddd = ["#{listx}" << "#{listy}"].flatten
-
-
-
-	end
 
 p b_array(["a", "b", "c", 1, 2], 3)
