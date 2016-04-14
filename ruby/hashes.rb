@@ -16,19 +16,45 @@ puts "What is you name?"
 client[:name] = gets.chomp
 
 puts "How many children do you have"
-client[:kids] = gets.chomp
+client[:kids] = gets.chomp.to_i
 
 puts "How old are you?"
-client[:age] = gets.chomp
+client[:age] = gets.chomp.to_i
 
 puts "What is your preferred decor theme: Modern, Country, or Cottage?"
 client[:decor] = gets.chomp
 
 puts "Have you ever used an interior designed before (y/n)?"
-client[:used_before] = gets.chomp
+input = gets.chomp
+if input == "y"
+	input = true
+else
+	input = false
+end
+client[:designed] = input
 
 puts "What is your budget for the project"
-client[:budget] = gets.chomp
+client[:budget] = gets.chomp.to_i
 
-puts "Okay, take a look at the information you've provided to make sure everything looks right"
+puts "Okay, take a look at the information you've provided to make sure everything looks right."
+p client
+
+puts "Would you like to make edits? (y/n)"
+edit = gets.chomp
+if edit == "n"
+	p client
+	exit
+else
+	puts "Enter in name of key to edit.  Do not use the colon(:)."
+end
+
+key_edit = gets.chomp.to_sym
+
+puts "Okay so you want to edit the #{key_edit} key."
+
+puts "Give the #{key_edit} key an updated value."
+new_value = gets.chomp
+
+client[key_edit] = new_value
+
 p client
