@@ -23,7 +23,7 @@ end
 
 favorite_movies.each { |movies| puts "I give #{movies} 4 starts!"}
 
-favorite_movies.map do |movies| 
+a = favorite_movies.map! do |movies| 
 	puts "#{movies} is great!"
 end
 
@@ -43,5 +43,17 @@ leading_actor.each { |movie, star| puts "#{star} is the leading actor in #{movie
 leading_actor.map do |movie, star|
 	puts "#{star} played his most famous role in #{movie}."
 end
+
+array = ["A", "B", "C", "D", "E"]
+hash = {
+	"Buggs" => "Bunny",
+"Elmore" => "Fudd",
+"Foghorn" => "Laghorn",
+"Fannie" => "Pannie"}
+
+a = hash.delete("t") { |el| puts "#{el} is not a Looney Toon" }
+
+p a
+
 
 
