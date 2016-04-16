@@ -53,7 +53,9 @@ hash = {
 
 a = hash.delete("t") { |el| puts "#{el} is not a Looney Toon" }
 
-p a
-
+n = hash.select {|first, last| last == "Bunny"}
+p n 
+z = hash.delete_if { |first, last| last == "Bunny" }
+p z
 
 
