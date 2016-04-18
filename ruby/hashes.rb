@@ -12,7 +12,7 @@
 
 client = Hash.new
 
-puts "What is you name?"
+puts "What is your name?"
 client[:name] = gets.chomp
 
 puts "How many children do you have"
