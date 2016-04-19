@@ -19,29 +19,30 @@ p list.keys.join(', ').upcase
 # Method to add more items to the list
 puts "Add more items to the list? (y/n)"
 answer = gets.chomp
+  # input string
 if answer == 'y'
-	list2 ={}
+	list2 ={} #create second hash to add more items
   	puts "Enter more items to add to list (each item seperated by a space)"
-  	more_items = gets.chomp
-  	more_items = more_items.split(' ')
-  	more_items.each do |key|
+  	more_items = gets.chomp # input string
+  	more_items = more_items.split(' ') #creat array from string input
+  	more_items.each do |key| # create hash from array set to defaul value of 1
   		list2[key.to_sym] = "1"
   		end
-  		p list2.keys.join(', ').upcase
+  		p list2.keys.join(', ').upcase #output to console
       new_list = list.merge(list2)   
       # new_list.each {|key, value| p key.to_s} 		
 	else
 p new_list
  end
 
- updated_hash = {} 
+ updated_hash = {} #initualize new hash to take updated values for each key
 new_list.each do |key, value|
   puts "How many #{key.upcase}'s do you need?"
   qnt = gets.chomp
   updated_hash[key] = qnt
    end
    updated_hash.each do |key, value|
-     p "#{key.to_s.upcase}" + ": " + "#{value}"
+     p "#{key.to_s.upcase}" + ": " + "#{value}" #out put to console
    end
 
 
