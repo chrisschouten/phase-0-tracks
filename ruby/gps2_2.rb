@@ -15,28 +15,44 @@ items.each do |key|
   end
 
   # print the hash to console listing each item with value of one
-p list
-
+p list.keys.join(', ').upcase
+# Method to add more items to the list
 puts "Add more items to the list? (y/n)"
 answer = gets.chomp
 if answer == 'y'
 	list2 ={}
   	puts "Enter more items to add to list (each item seperated by a space)"
   	more_items = gets.chomp
-  	p more_items = 
   	more_items = more_items.split(' ')
   	more_items.each do |key|
   		list2[key.to_sym] = "1"
   		end
-  		p list2  				
-	elsif 
-		
-  exit
+  		p list2.keys.join(', ').upcase
+      new_list = list.merge(list2)   
+      # new_list.each {|key, value| p key.to_s} 		
+	else
+p new_list
+ end
+
+ updated_hash = {} 
+new_list.each do |key, value|
+  puts "How many #{key.upcase}'s do you need?"
+  qnt = gets.chomp
+  updated_hash[key] = qnt
+   end
+   updated_hash.each do |key, value|
+     p "#{key.to_s.upcase}" + ": " + "#{value}"
+   end
+
+
+puts "Would you like to update any thing else? (y/n)"
+ans = gets. chomp
+if ans == "y"
+  puts "Tell me what you want to update."
+else
+  puts "Have fun shopping!"
 end
 
-
-
-# Method to add an item to a list
   # enter an item to add to the list
   # enter quantity
 # input: item name and optional quantity
