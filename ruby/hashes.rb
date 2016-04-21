@@ -26,11 +26,7 @@ client[:decor] = gets.chomp
 
 puts "Have you ever used an interior designed before (y/n)?"
 input = gets.chomp
-if input == "y"
-	input = true
-else
-	input = false
-end
+
 client[:designed] = input
 
 puts "What is your budget for the project"
@@ -42,6 +38,7 @@ p client
 puts "Would you like to make edits? (y/n)"
 edit = gets.chomp
 if edit == "n"
+	p "This is your complete survey."
 	p client
 	exit
 else
@@ -52,11 +49,11 @@ key_edit = gets.chomp.to_sym
 
 puts "Okay so you want to edit the #{key_edit} key."
 
-puts "Give the #{key_edit} key an updated value."
+puts "Give #{key_edit} an updated value."
 new_value = gets.chomp
 
 client[key_edit] = new_value
-
+puts "Your complete survey"
 p client
 
 # address = 'lsdfk@lk'#gets.chomp
