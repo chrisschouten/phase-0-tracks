@@ -5,6 +5,7 @@ solar_system = {
 	"Earth" => ["blue", "pleasant", "oceans"],
 	"Jupiter" => ["Orange", "warm", "gassy"],
 }
+
 p solar_system
 
 p solar_system["Mars"][1]
