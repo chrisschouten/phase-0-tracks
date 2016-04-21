@@ -58,3 +58,81 @@ new_value = gets.chomp
 client[key_edit] = new_value
 
 p client
+
+# address = 'lsdfk@lk'#gets.chomp
+
+# puts 'Please enter your phone number'
+# phone_number = 394871987#gets.chomp.to_i
+
+# puts 'Do you like wallpaper? (T or F)'
+# wallpaper = 't'#gets.chomp.downcase
+# likes_wallpaper = wallpaper == 't'
+
+# puts 'Do you like a rustic wood look? (T or F)'
+# wood = 'f'#gets.chomp.downcase
+# likes_wood = wood == 't'
+
+# interior_designer = Hash.new
+
+# interior_designer[:name] = name
+# interior_designer[:address] = address
+# interior_designer[:phone_number] = phone_number
+# interior_designer[:likes_wallpaper] = likes_wallpaper
+# interior_designer[:likes_wood] = likes_wood
+
+# p interior_designer
+
+# puts 'Would you like to make any changes to your profile (T or F)?'
+# change = 't'#gets.chomp.downcase
+
+# if change == 't'
+#   #1a. find out what to change 
+#   puts "What would you like to change?"
+#   change_key = gets.chomp.to_sym
+#   #1b. find out the value
+#   puts "What are we changing this too?"
+#   change_value = gets.chomp
+#   #2. make that change
+#   # http://ruby-doc.org/core-2.3.0/Hash.html#method-i-5B-5D-3D
+#   # h = { "a" => 100, "b" => 200 }
+#   # h["a"] = 9
+#   interior_designer[change_key] = change_value#[change_key]
+# else
+#   puts 'no changes made'
+# end  
+  
+  
+#   # chaange has been made
+  
+  
+  
+  
+  
+# #   interior_designer = change_data[]
+# # end
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
