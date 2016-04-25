@@ -1,34 +1,49 @@
-# have user type in their first and last name
-# iterate over data swapping first and last name
-# iterate over data to change all vowels to the next vowel in aeiou
-# and change all consonants to the next consonants
+
+
+# # have user type in their first and last name
+# # iterate over data swapping first and last name
+# # iterate over data to change all vowels to the next vowel in aeiou
+# # and change all consonants to the next consonants
 
 puts "What is your first and last name?"
-name  = gets.chomp
+name  = gets.chomp #capture name from user input
 
-name_array = name.split('')
-reverse_name_array = name_array.reverse!
-name_array = name_array.join('')
-puts "Or should I call you #{name_array}"
+#downcase name
+name_downcase = name.downcase
 
+# transforms the alphabet using the transform method.
+shift_letter = name_downcase.tr('aeioubcdfghjklmnpqrstvwxyz', 'eiouacdfghjklmnpqrstvwxyzb')
 
-r = reverse_name_array.each {|letter| "#{letter.next!}"}
+# transform string into an array
+name_to_array = shift_letter.split(" ")
 
-secret_name = r.join('')
-puts "This is your new top secret code name:\n#{secret_name}"
+# capitalize each word in string
+name_is_capitalized = name_to_array.map do |alias_name|
+	alias_name.capitalize
+end
 
-
-
-
-
-# new_name = name_array.join(' ')
-# puts "Hello, #{reverse_name}, or should I call you #{new_name.upcase}."
-
-# # if aeiou then next to aeiou
-# # if anything else next consant letter
-# p reverse_name
+# swap order of first and last name 
+name_is_reversed = name_is_capitalized.reverse
 
 
-# reverse_name = name_array.reverse_each {|name|}
+# rejoin array in string
+final_alias = name_is_reversed.join(" ")
+
+def alias_roster(name, final_alias)
+	puts "#{name}, your alias name is #{final_alias}."
+	
+end
+
+name_is_reversed.each do |item|
+	puts "#{name}, your alisas name is #{final_alias}."
+end
+
+
+
+	
+
+
+
+
 
 
