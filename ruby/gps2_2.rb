@@ -116,3 +116,97 @@ end
 	# input: would be the hash quantaining the data of item of quantity
 	# steps: print to console keys and value
 	# string
+
+
+# -----------------------------------------------
+
+# creates a new string
+items = String.new("apple bananna cookies")
+p items
+
+# Method that takes in a string argument and returns and array
+def list(items)
+  items.split(" ")
+end
+array = list(items)
+
+# method that takes in an array and converts it into a hash with a default value of 1
+def new_list(arg)
+  hash = {}
+  arg.each do |item|
+    hash[item] = 1
+  end
+ hash
+end
+p new_list(array)
+  
+    
+  
+
+# items = "apples oranges"
+# list = {}
+
+# def list2(items)
+#     items.split(' ')
+# end
+# p 
+
+# #   items_as_array = items.split(" ")#
+# # items_as_array.each do |key|
+# #   completed_list[key.to_sym] = "1"
+#   # array to hash conversion
+# end
+# p items_as_array
+# end
+
+# Hashes have a default value that is returned when accessing keys that do not exist in the hash. If no default is set nil is used. You can set the default value by sending it as an argument to ::new:
+
+# grades = Hash.new(0)
+# p list(items)
+# input: string of items separated by spaces (example: "carrots apples cereal pizza")
+# steps: 
+  # [create data structure]
+  # set default quantity to 1
+  # print the list to the console [can you use one of your other methods here?]
+#p 
+# output: [hash]
+
+# Method to add an item to a list
+# input: item name and optional quantity
+# steps: add item to list
+# # output: updated hash
+# def add (additions)
+#   #code goes here
+# end
+# # Method to remove an item from the list
+# # input: current list and new items
+# # steps: delete items from list
+# # output: updated list
+# def remove(delete)
+  
+# end
+
+# # Method to update the quantity of an item
+# # input: a hash, a key representing an item, and a integer representing the new quantity
+# # steps: 
+#   #look up value of item in hash, reassign that to new quantity
+# # output: modified hash
+# def update(hash, item, quantity)
+#   #stuff happens
+#   return hash
+# end
+
+# # Method to print a list and make it look pretty
+# # input: hash representing each item and quabtity in groecery list
+# # steps: code that will manipulate item and quanitity in readbale format
+# # output: string of item and qty
+# def print(item, quantity)
+# end
+# grocery = "carrots, apples, cereal, pizza, salad, raisins, pears, celery"
+# p grocery
+
+# driver code and tests
+# def run
+#   result = list('wombat carrots neutronium capybara')  
+# end
+# puts run
