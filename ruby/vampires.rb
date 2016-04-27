@@ -43,9 +43,8 @@ else
 end
 
 alergyy_respone = ""
-
 until alergyy_respone == "done"
-	puts "List your alergies."
+	puts "List your alergies or enter done"
 	alergyy_respone = gets.chomp
 if alergyy_respone == "sunshine"
 	puts "Probably a vampire."

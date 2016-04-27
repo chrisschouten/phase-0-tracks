@@ -121,14 +121,17 @@ end
 # -----------------------------------------------
 
 # creates a new string
-items = String.new("apple bananna cookies")
-p items
+
+def make_list(list)
+ String.new(list)
+end
+x = make_list("aa bb cc")
 
 # Method that takes in a string argument and returns and array
-def list(items)
-  items.split(" ")
+def list1(arg)
+  arg.split(" ")
 end
-array = list(items)
+b = list1(x)
 
 # method that takes in an array and converts it into a hash with a default value of 1
 def new_list(arg)
@@ -138,7 +141,7 @@ def new_list(arg)
   end
  hash
 end
-p new_list(array)
+p new_list(b)
   
     
   
@@ -201,6 +204,7 @@ p new_list(array)
 # # steps: code that will manipulate item and quanitity in readbale format
 # # output: string of item and qty
 # def print(item, quantity)
+# end
 # end
 # grocery = "carrots, apples, cereal, pizza, salad, raisins, pears, celery"
 # p grocery
