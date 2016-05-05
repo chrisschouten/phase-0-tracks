@@ -1,13 +1,15 @@
 class Music
 
-	attr_reader
-	attr_writer
+	attr_reader :play, :title
+	attr_writer :rating, :volume
 
 
 	def initialize(category, title, volume)
 		@category = category
 		@title = title
 		@volume = volume
+		@rating = "Excellent"
+
 	end
 
 	def play
@@ -21,10 +23,21 @@ class Music
 	def suggest_song_to_play(song)
 		puts "I would love the play '#{song}' for you!"
 	end
+
+	def loudness
+		@loudness
+	end 
+
+	def loudness=(new_volume)
+		@loudness = new_volume
+	end
+		
 end
 
-a = Music.new("country", "whatever", 10)
+song = Music.new("country", "whatever", 10)
+song.loudness
 
-a.play
-a.loudness
-a.suggest_song_to_play("kids")
+song.loudness = 5
+puts "The new volume for #{song.title} is: #{song.loudness}."
+
+
