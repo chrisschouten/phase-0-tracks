@@ -1,15 +1,19 @@
-# class Calculator
-#   def add(x,y)
-#     x + y
-#   end
+class Calculator
+  def add(x,y)
+    x + y
+  end
 
-#   def subtract(x,y)
-#     x - y
-#   end
+  def subtract(x,y)
+    x - y
+  end
 
-#   def multiply(x,y)
-#     x * y
-#   end
-# end
+  def multiply(x,y)
+    x * y
+  end
+
+  def divides(x,y)
+  	x / y
+  end
+end
 
 puts "hello there"
