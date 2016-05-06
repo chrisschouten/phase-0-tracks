@@ -64,7 +64,7 @@ class VirusPredictor
 
 end
 
-#interate thru state_data nested hash and each instance in the class will be passed into the block.  The block interation will call the virus_effects method on each state and output an interpolated string.
+# interate thru state_data nested hash and each instance in the class will be passed into the block.  The block interation will call the virus_effects method on each state and output an interpolated string.
 STATE_DATA.each do | state, data |
   state = VirusPredictor.new(state, data[:population_density], data[:population])
   state.virus_effects
@@ -91,3 +91,5 @@ end
 
 #=======================================================================
 # Reflection Section
+# new comment
+# and another
